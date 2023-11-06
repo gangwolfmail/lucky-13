@@ -19,6 +19,142 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+ <div class="our-background"> 
+<div class="header">
+  <div class="container header-container">   
+  <div class="header-wr">
+<a href="" > <svg class="header-logo" > 
+  <use href="img/icons.svg#icon-logo"></use>
+</svg>
+</a>
+<nav class="header-menu"> 
+<ul class="header-menu-list">
+<li class="header-menu-item"><a href="#About-us" class="header-menu-link" >About us</a></li>
+<li class="header-menu-item"><a href="#Our-courses" class="header-menu-link" >Our courses</a></li>
+<li class="header-menu-item"><a href="#Our-mentors" class="header-menu-link" >Our mentors</a></li>
+<li class="header-menu-item"><a href="#Reviews" class="header-menu-link" >Reviews</a></li>
+<li class="header-menu-item"><a href="#Contacts" class="header-menu-link" >Contacts</a></li>
+</ul>
+</nav>
+<div class="header-content-wrap">
+<a class="header-sign-up" href="#Sign-up">
+<svg width="16" height="16" class="header-sign-up-icon">
+<use href="img/icons.svg#icon-bi_camera-fill"></use>
+</svg>
+</a>
+<button type="button" class="header-button">
+<span class="band"></span>
+<span class="band band-center"></span>
+<span class="band"></span>
+</button>
+</div>
+</div>
+<a href="#Sign-up" class="header-sign-up-link">Sign up</a>
+</div>
+
+<!---MODAL-->
+
+
+
+   <div class="modal-window" id="modal">
+     <div class="modal-button">
+<button type="button" class="button-band" id="button-band-close">
+x
+</button>
+<ul class="navigation-band">
+<li><a class="navigation-band-item" href="#About-us">About us</a></li>
+<li><a class="navigation-band-item" href="#Our-courses">Our courses</a></li>
+<li><a class="navigation-band-item" href="#Our-mentors">Our mentors</a></li>
+<li><a class="navigation-band-item" href="#Reviews">Reviews</a></li>
+<li><a class="navigation-band-item" href="#Contacts">Contacts</a></li>
+</ul>
+<img class="modal-photo"
+src="img/header/restangle.jpg"
+alt="camera"
+width="329"
+height="218">
+
+
+
+  </div>
+   </div>
+
+
+
+      </div>
+</header>
+
+<!-- Ваші стилі та HTML код -->
+
+<!-- <script>
+  // Отримання посилань на елементи DOM
+  const modal = document.querySelector('.modal-window');
+  const openModalButton = document.querySelector('.header-button');
+  const closeModalButton = document.querySelector('.button-band');
+
+  // Функція відкриття модального вікна
+  function openModal() {
+    modal.style.display = 'block';
+  }
+
+  // Функція закриття модального вікна
+  function closeModal() {
+    modal.style.display = 'none';
+  }
+
+  // Додавання обробників подій для кнопок відкриття та закриття
+  openModalButton.addEventListener('click', openModal);
+  closeModalButton.addEventListener('click', closeModal);
+
+  // Додавання обробників подій для закриття модального вікна при кліку поза вікном
+  window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
+</script> -->
+<script>
+  // Отримання посилань на елементи DOM
+  const modal = document.querySelector('.modal-window');
+  const openModalButton = document.querySelector('.header-button');
+  const closeModalButton = document.querySelector('.button-band');
+
+  // Функція відкриття модального вікна
+  function openModal() {
+    modal.style.display = 'block';
+  }
+
+  // Функція закриття модального вікна
+  function closeModal() {
+    modal.style.display = 'none';
+  }
+
+  // Додавання обробників подій для кнопок відкриття та закриття
+  openModalButton.addEventListener('click', openModal);
+  closeModalButton.addEventListener('click', closeModal);
+
+  // Додавання обробників подій для закриття модального вікна при кліку поза вікном
+  window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
+
+  // Close the mobile menu on wider screens if the device orientation changes
+  window.matchMedia('(min-width: 768px)').addEventListener('change', (e) => {
+    if (e.matches) {
+      // Код для закриття мобільного меню тут
+      mobileMenu.classList.remove('is-open');
+      openMenuBtn.setAttribute('aria-expanded', false);
+      bodyScrollLock.enableBodyScroll(document.body);
+    }
+  });
+</script>
+
+</body>
+</html>
+
+
   <body>
     <section class="about-us">
       <div class="container">
